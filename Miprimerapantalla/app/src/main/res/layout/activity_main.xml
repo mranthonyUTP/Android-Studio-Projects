@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="74dp">
 
         <TextView
             android:id="@+id/txtTitulo"
@@ -23,17 +25,50 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtNumero1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Escribe tu nombre"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:hint="Digite un numero" />
+
+        <EditText
+            android:id="@+id/txtNumero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Digite otro numero" />
+
         <Button
-            android:id="@+id/btnSaludar"
+            android:id="@+id/btnSumar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Saludar"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:text="Sumar" />
+
+        <TextView
+            android:id="@+id/Resultado"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:padding="10sp"
+            android:text="Resultado"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:text="@string/app_name"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2026, Anthony Hernandez"
+            android:textAlignment="center" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
