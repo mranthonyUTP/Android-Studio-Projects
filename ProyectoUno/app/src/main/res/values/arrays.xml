@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Array de unidades de peso disponibles para los Spinners.
+        Cada posición representa una unidad que se puede seleccionar.
+    -->
+    <string-array name="weight_units">
+        <item>Kilogramos</item>
+        <item>Libras</item>
+        <item>Onzas</item>
+        <item>Gramos</item>
+    </string-array>
+</resources>

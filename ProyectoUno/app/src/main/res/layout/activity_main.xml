@@ -5,15 +5,120 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
+    <!-- Título de la aplicación -->
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Conversión de Peso"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Campo de texto para ingresar el valor a convertir -->
+    <EditText
+        android:id="@+id/etInputValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Ingrese un valor numérico"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!-- Spinner para seleccionar la unidad de origen -->
+    <TextView
+        android:id="@+id/tvFromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="De:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etInputValue" />
+
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvFromLabel"
+        app:layout_constraintTop_toTopOf="@id/tvFromLabel"
+        android:layout_marginLeft="16dp" />
+
+    <!-- Spinner para seleccionar la unidad de destino -->
+    <TextView
+        android:id="@+id/tvToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="A:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerFrom" />
+
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvToLabel"
+        app:layout_constraintTop_toTopOf="@id/tvToLabel"
+        android:layout_marginLeft="16dp" />
+
+    <!-- Botón para ejecutar la conversión -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="CONVERTIR"
+        android:textSize="18sp"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerTo" />
+
+    <!-- TextView para mostrar el resultado de la conversión -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Resultado"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConvert" />
+
+    <!-- TextView con los nombres de los integrantes -->
+    <TextView
+        android:id="@+id/tvIntegrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integrantes: Tu Nombre y Compañeros"
+        android:textSize="14sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
