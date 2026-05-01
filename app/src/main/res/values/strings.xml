@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Actividad 5</string>
+    <string name="title_preferences">Mis Preferencias</string>
+
+    <!-- Labels & Hints -->
+    <string name="label_full_name">Nombre Completo</string>
+    <string name="hint_full_name">Ingrese su nombre completo</string>
+    <string name="label_favorite_food">Comida Favorita</string>
+    <string name="label_hobby">Pasatiempo Favorito</string>
+    <string name="label_sports">¿Practica algún deporte?</string>
+    <string name="label_dob">Fecha de Nacimiento</string>
+    <string name="btn_pick_date">Seleccionar Fecha</string>
+    <string name="btn_fun_toast">¡Haz clic para una sorpresa!</string>
+    <string name="btn_show_data">Mostrar Mis Preferencias</string>
+
+    <!-- Options -->
+    <string name="food_italian">Italiana</string>
+    <string name="food_chinese">China</string>
+    <string name="food_panamanian">Panameña</string>
+
+    <string-array name="hobbies_array">
+        <item>Leer</item>
+        <item>Jugar videojuegos</item>
+        <item>Cocinar</item>
+        <item>Viajar</item>
+    </string-array>
+
+    <!-- Messages -->
+    <string name="toast_message">¡Espero que tengas un día maravilloso! ✨</string>
+    <string name="dialog_title">Preferencias del Usuario</string>
+    <string name="summary_format">Nombre: %1$s\nComida: %2$s\nPasatiempo: %3$s\nDeportes: %4$s\nFecha de Nacimiento: %5$s</string>
+</resources>
